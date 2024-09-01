@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url(/public/sf-pro-display_semibold.woff2);
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.newfont {
+    font-family: 'SFProDisplay';
+}
+
+.masked {
+    font-size: 48px; /* Adjust the size as needed */
+    font-family: 'SFProDisplay';
+    position: relative;
+    background: url("https://i.pinimg.com/564x/d9/54/87/d95487ffab31b9722b12eaf0e5709494.jpg") no-repeat center center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: cover;
+    filter: brightness(1.5); /* Enhance the brightness */
+}
+
+.masked::before {
+    content: "Mackbook pro.";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://i.pinimg.com/564x/d9/54/87/d95487ffab31b9722b12eaf0e5709494.jpg") no-repeat center center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: cover;
+    filter: blur(40px) brightness(2); /* Adjusted blur and brightness */
+    opacity: 0.8; /* Adjust the opacity */
+}
+
+.masked::after {
+    content: "Mackbook pro.";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://i.pinimg.com/564x/d9/54/87/d95487ffab31b9722b12eaf0e5709494.jpg") no-repeat center center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: cover;
+    filter: blur(20px); /* Heavier blur and more brightness */
+    opacity: 0.8; /* Lower opacity for softer effect */
+}
+
+.line{
+    border-bottom: 0.2px solid #333;
+}
